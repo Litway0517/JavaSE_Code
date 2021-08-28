@@ -8,7 +8,7 @@ public class MethodTest05 {
 
     }
 
-    public static void printArray(int[] arr) {
+    private static void printArray(int[] arr) {
         System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length-1) {        // 如果是最后一个数据, 那么就不加  ", "
