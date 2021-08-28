@@ -1,0 +1,213 @@
+00. myTestAll模块[0]. 作为自己学习, 测试与标记等使用.
+---------------------------------------------------------------
+Tips"
+同一个包下面定义同名类是不行的, 因此我们分开为多个包, 方便对类的管理.
+
+
+---------------------------------------------------------------
+
+01. 00-52小课: 使用dos编程, 存在01bilibili_dos文件夹[未收录到本项目中].
+02. 53-68小课: myArray模块[1].
+03. 69-85小课: myMethod模块[2].
+04. 86-88小课: Debug模块[未创建].
+05. 89-98小课: myTest模块[3].
+06. 99-114小课: myClass模块[4].
+07. 115-127小课: myString模块[5].
+08. 128-133小课: myStringBuilder模块[6].
+09. 134-138小课: myArrayList模块[7].
+10. 139-149小课: studentManager模块[8].
+11. 150-161小课: myExtends模块[9].
+12.     162小课: package讲解[未创建].
+13.     163小课: myImport[10].
+14.     164小课: myModifier[11]. 权限修饰符. private\默认\protected\public.
+15. 165-166小课: myFinal[12]. 状态修饰符. final.
+16. 167-168小课: myStatic[13]. 状态修饰符. static.
+17. 169-174小课: myDuoTai[14]. 多态及相关知识.
+18. 175-178小课: myAbstract[15]. 抽象类.
+19. 179-186小课: myInterfaceOne[16]. 接口.
+20. 187-188小课: myArgs[17]. 类 抽象类 接口三者分别作为 形参和返回值 会怎么样.
+21. 189-193小课: myInnerClass[18]. 内部类
+22. myCommonApi[19]. 常用API. 将Math System 放在了同一个模块中了. 但是老师是放在不同模块中的.
+        194小课: myMath[01]. Math.
+        195小课: mySystem[02]. System.
+    196-197小课: myObject[03]. Object中的toString和equals方法.
+23. 198-200小课: myArrays[20]. Arrays类的使用.
+24. 201-205小课: myInteger[21]. 基础数据类型 与 包装数据类型. String --- int. int --- String.
+25. 206-207小课: myDate[22]. Date构造方法和getTime与setTime.
+26. 208-209小课: mySimpleDateFormat[23].
+27. 210-212小课: myCalendar[24]. Calendar. set. add. get. 三个方法.
+28. 213-219小课: myException[25]. Exception. getMessage. toString方法. e.parseException方法.
+29. 220-225小课: myCollection[26]. Collection. add. remove. clear. contains. isEmpty. size. iterator.
+30. 226-237小课: myList[27]. List. get. iterator. 并发异常源码分析. ListDemo源码分析. 增强For. ArrayList. LinkedList. getFirst. getLast. addFirst. addLast. removeFirst. removeLast.
+31. 238-249小课: mySet[28]. Collection(单列). Set. TreeSet. LinkedHashSet. List. ArrayList. LinkedList.
+32. 250-256小课: myGeneric[29]. 泛型. 泛型类. 泛型方法. 泛型接口 的定义格式. 可变参数. 可变参数的使用.
+33. 257-266小课: myMap[30]. Map. put. containsKey. containsValue. isEmpty. size. keySet. value=get(key). entrySet. getKey. getValue.
+34. 267-271小课: myCollections[31]. Collections是一个对集合进行操作的具体类. sort. shuffle. reverse.
+35. 272-275小课: myFile[32]. 文件构造方法. isDictionary. isFile. exists. getName. getPath. getAbsolutePath. mkdir. mkdirs. delete. listFiles.
+36. 276-278小课: myDiGui[33]. 递归记得要找出口.
+37. 279-289小课: myByteStream[34].
+                这个是字节流. 两个基类分别是InputStream(读取/输入)和OutputStream(写/输出).
+                FileInputStream. FileOutputStream. read. write()写入单个字节. getBytes()字符串转为字符数组. String(byte[] b, int off, int len)转换字符数组中的一部分内容为一个字符串. 将一个字符数组从指定偏移量off按指定长度len转换为一个字符串(这本身是一个构造方法).
+                BufferedInputStream(InputStream in). BufferedOutputStream(OutputStream out). write(byte[] b)写入一个字节数组. write(byte[] b, int off, int len)将字节数组中的一部分数据写入到文件. 写入一个指定开始偏移量和长度的字节数组.
+38. 290-311小课: myCharStream[35].
+                这个是字符流. 两个基类分别是Reader(读/输出)和Writer(写/输出).
+                Reader. InputStreamReader. BufferedReader. FileReader(String readLine()特有方法). 均同样也有read()和read(char[] chs)读取数据的方法.
+                Writer. OutputStreamWriter. BufferedWriter. FileWriter(void newLine()写一个换行符. void write(String line)一次写一个字符串).
+                String中的编码和解码关系. Arrays方法的使用. flush().
+                实例1 -> ArrayListToTxt. TxtToArrayList. ArrayListToFile. FileToArrayList. TreeSetToFile.
+                实例2 -> 复制单级文件夹. 复制多级文件夹.
+                针对异常的改进(4种方式).
+39. 312-323小课: myOtherStream[36].
+                System.in标准输入流. System.in可以通过InputStreamReader转换为字符流. 因为InputStreamReader的构造方法需要传入一个字节流. 而System.in就是字节流.
+                System.out标准输出流
+                PrintStream()字节打印流. 它们中均有特有函数println(String line), 能将数据打印到文件 末尾自动加上换行.
+                PrintWriter()字符打印流. 构造方法中有参数autoFlush=true, 则自动刷新. writer(). flush()若不刷新数据不会到文件中. print(). println().
+                ObjectOutputStream(OutputStream out)输出序列化流. 可以将一个对象数据序列化到文件永久存储. writeObject().
+                ObjectInputStream(InputStream in)输入序列化流. 可以从文件中读取数据将对象反序列化到内存. readObject(). 记得能将对象向下转型.
+                Properties集合 是一个特殊的集合 作为Map集合的使用 即按照键值对存储数据. put(String key, String value). 注意实例化集合时后面不需要给出具体泛型.
+                    setProperty()特有方法. getProperty(String key)通过键获取值. prop.entrySet()迭代器遍历方法. prop.stringPropertyNames()返回prop集合的所有键的集合.
+                    store(Writer writer, String comment)可以将集合的内容写入到文件. load(Reader reader)从指定文件中加载数据到集合. 免费玩3次的小游戏就是用过文件的count计数实现的.
+40. 324-338小课: myThread[37].
+                使一个类A能够实现多线程的第一种方式 使A extends Thread. 实例化A之后再调用start()方法. 注意不是run方法. run方法与类调用方法的效果是一致的.
+                t1.setName()设置t1线程名称. Thread.CurrentThread.setName()设置当前执行线程的名称.
+                setProperty(int i) i为1-10. MIN_PRIORITY=1 DEFAULT_PRIORITY=5 MAX_PRIORITY=10.
+                setDaemon(true)主线程执行完毕 守护线程即可提前结束. t1.join()等待线程t1死往. Thread.sleep(100)线程休眠100毫秒.
+                使一个类A实现多线程的第二种方式 使A extends Runnable. 实例化A之后只需要将对象传入Thread即可. 这里的A更像是一份资源, 能够被多个线程同时访问.
+                卖票案例 -> 出现卖同一张票的情况 出现负数票的情况 分析原因.
+                synchronized(Object obj) {...} -> 使用synchronized同步化相关代码 以保证不出现问题. 注意 -> synchronized中的"锁"一定要是同一把锁.
+                锁的问题 -> 复制相同的一段代码成为两段 可以使用同一把锁private Object obj. 如果使private synchronized(同步化)的方法 锁名是this. 如果是private static synchronized(静态同步化)方法 锁名是 XXX.class(XXX是类名).
+                线程安全的类 -> StringBuilder -- StringBuffer(安全). ArrayList -- Vector(安全). HashMap -- Hashtable(安全). 实际应用中StringBuffer用的多 但Vector和Hashtable用的不多. 而是Collections.synchronizedList(List<T> list)方法 使得一个列表变为安全的.
+                Lock类能够创建锁 更灵活地使用. lock.lock(). lock.unLock(). 在lock和unLock之间的代码会被加锁.
+                wait()进入等待状态 需要和synchronized配合使用. notify()唤醒线程. notifyAll()唤醒所有线程.
+41. 339-354小课: myNet[38].
+                IP相关的协议 -> 主要封装在InetAddress类下 但InetAddress并没有构造方法 需要使用类的静态方法构造InetAddress对象.
+                    -> static InetAddress getByName​(String host) Host参数可以是IP地址也可以是主机名 传入本机IP地址的字符串形式(或传入本机的主机名)返回的是InetAddress 这样就创建了一个对象.
+                    -> InetAddress的实例对象s调用getHostName()获取主机名称. 调用getHostAddress()获取注即地址.
+                UDP数据报
+                    发送端 -> 发送步骤: 创建套接字对象->创建数据并打包成DatagramPocket->发送数据->关闭发送端.
+                        -> DatagramSocket()无参构造套接字.
+                        -> DatagramPacket​(byte[] buf, int length, InetAddress address, int port)buf是待发送的数据 length是发送的长度 address是目标主机地址 port是目标主机地址上的目标应用程序.
+                        -> send(DatagramPocket p)肯定是由套接字对象发送数据包对象 套接字像是一个发射器而数据包是被发射的. close().
+                    接收端 -> 接收步骤: 创建套接字对象->创建数据包DatagramPocket准备接受数据->接收数据->解析数据包->执行相关操作->关闭接收端.
+                        -> DatagramSocket(int port)接收端的套接字需要指明端口号.
+                        -> DatagramPocket(@NotNull byte[] buf, int len)创建数据包 把接收数据长度为length的数据存储到buf字节数组内.
+                        -> ds为接收端套接字对象 dp为数据包 ds.receive(dp)接收数据. ds.close()关闭.
+                        -> dp.getData()获取数据包中的数据 返回一个字节数组. dp.getLength()获取数据包的长度.
+                TCP数据报
+                    客户端 -> 发送步骤: 创建客户端Socket类对象->该对象获得输出流->写数据->关闭客户端套接字
+                        -> Socket(String host, int port)需要传入IP地址和端口号(或者是InetAddress对象 实际上第一种更简便).
+                        -> getOutputStream()获取输出流. 输出流中的 write(@NotNull byte[] buf)写一个非空字节数组的数据. close().
+                    服务器 -> 接收步骤: 创建服务器端ServerSocket对象->该对象获取输入流读数据->对数据操作->*一般来说服务器端不需要关闭(可选)
+                        -> ServerSocket(int port)需要给出待接收应用程序的端口号.
+                        -> Socket accept()该方法返回一个Socket 即返回的是客户端套接字对象 侦听要与此套接字建立的连接并接受它. 该方法阻塞 直到建立连接.
+                        -> getInputStream()获取输入流 可以创建字节数组把该流中的数据存到数组. close().
+                        -> 客户端的OutputStream和服务器端的InputStream是一对相同的流 只是角度不同. 输入流中的 read(byte[] buf) 读取数据到字节数组.
+                    因为TCP中传输数据涉及到InputStream和OutputStream 因此可以把他们封装成BufferedInputStream或BufferedOutputStream 这样能够使用字符缓冲输出流的特有方法. String readLine(). write(String line). newLine(). flush().
+                    练习 -> 存储客户端手动输入的数据到服务器端的文件. 客户端从本地文件中读取数据上传到服务器端.
+                    客户端从本地上传文件到服务器端 *并给出反馈*. 因为服务器端在用while((Sting line=br.readLine()) != null)读数据时是阻塞的 因此服务器此时会一直读取数据 这时可以在循环中用if判断读取的数据是不是我们设置的结束标志"886" 如果是则break 不是则继续执行复制操作. 但是一旦文件中包括886可能会误认为这时结束信号造成文件复制不完整!
+                        为此出现了shutOutput()方法 用来关闭客户端输出流 或 服务器端输入流.
+42. 355-362小课: myLambda[39].
+                注意: Lambda表达式的表达形式. () -> {}.
+                Lambda只能应用于函数的形式参数为接口的情况 且该接口有且仅有一个抽象方法.
+                Lambda中的内容实际上就是在重写对应接口的那个抽象方法.
+                省略形式 -> 可以省略参数类型 但是不能仅省略一个. 代码块中若只有一行代码 则可省略代码块的大括号和该语句分号. 当接口中待重写的抽象方法的形式参数只有一个时 可省略参数的小括号和参数类型. 如果代码块中只有一行语句但是该语句包括return 那么省略时return也需要省略.
+                要有上下文执行环境 -> Lambda需要识别出代码块中重写的语句是重写的哪一个接口的抽象方法.
+43. 363-366小课: myInterfaceTwo[40]. 作为对Interface接口的更新.
+                接口更新 -> 接口默认方法(Java8). 接口静态方法(Java8). 接口私有方法(Java9).
+                默认方法 -> public default void show() {...}. 默认方法不是抽象方法 不强制被实现类或接口继承类重写. 灵活性更高. 重写时不需要添加default关键字. 如果重写了默认方法 则按照实现类中重写的代码块执行. 否则执行接口中原来的内容. 另外接口中的默认方法也能够被该接口的实现类的具体对象调用.
+                静态方法 -> 静态方法只能被接口本身调用. 不能被实现类或者实现类对象调用.
+                私有方法 -> 在接口中两个默认方法或者静态方法中包含同一段逻辑代码的情况的 这段相同的代码必然需要抽取出来成为一个方法 这个方法就是私有方法. 接口中的默认方法可以调用私有方法和私有静态方法. 而接口中的静态方法只能调用私有静态方法.
+44. 367-372小课: myMethodReference[41].
+                方法引用 -> 用方法引用代替Lambda表达式 这样更简洁 这个方法可以是JDK内置的(但是这样功能很简单) 也可以是自己写好的一个类中的方法
+                这几句话比较重要
+                    -> 引用类方法，其实就是引用类的静态方法
+                        Lambda表达式被类方法替代的时候，它的形式参数全部传递给静态方法作为参数
+                    -> 引用对象的实例方法，其实就引用类中的成员方法
+                        Lambda表达式被对象的实例方法替代的时候，它的形式参数全部传递给该方法作为参数
+                    -> 引用类的实例方法，其实就是引用类中的成员方法, 只不过是由该实例去调用了相应类的成员方法
+                        Lambda表达式被类的实例方法替代的时候   第一个参数作为调用者   后面的参数全部传递给该方法作为参数
+                    -> 引用构造器，其实就是引用构造方法, 注意形式是new
+                        Lambda表达式被构造器替代的时候，它的形式参数全部传递给构造器作为参数
+45. 373-384小课: myFunctionInterface[42].
+                函数式接口 -> 一个接口中有且仅有一个抽象方法称为函数式接口
+                函数式接口作为方法的返回值 即返回的是一个接口(comparator比较器接口)
+                函数式接口作为方法的参数 即Runnable的实现类作为参数
+                以下的几个接口都是函数式接口 -> 它们后面都跟着一个泛型<> 明确每个接口的返回类型.
+                    Supplier<T>  生产型接口 -> get()方法会按照某种逻辑(逻辑的具体动作由Lambda实现)返回一个数据 返回值类型是Supplier的泛型类型. 别忘了要包含return语句 参考SupplierTest.java文件
+                    Consumer<T>  消费型接口 -> accept()方法 就是对指定参数进行消费(执行操作) void返回值. 具体的消费动作在Lambda中会写出 Lambda表达式是这里的前置要求. andThen是组合两个消费方式 -> consumer1.andThen(consumer2).accept(参数).  第一种消费方式处理参数会返回一个Consumer<T> 紧接着再用第二种方式处理.
+                    Predicate<T> 判断型接口 -> 用来判断参数是否满足某些条件. test()方法 就是把参数进行某种方式的检测 返回boolean 记得接收. negate()是一个对判断结果取反的方法.
+                                      and方法 指的是对一个参数需要进行两次判断时使用 -> pre1.and(pre2).test(参数) 先pre1判断式判断参数再pre2判断式判断参数 若均为真则返回真 有假则假. or链接方法 -> pre1.or(pre2).test(参数) 有真则真.
+                Function<T, R>接口 -> 表示接受一个泛型T类型的参数 返回一个泛型R类型的结果. apply()方法会对参数进行操作 返回值就是R. 同样有一个andThen组合方法 -> func1.andThen(func2).apply(T t).
+46. 385-394小课: myStream[43].
+                Stream流很强大 很方便. 需要 Lambda表达式 FunctionalInterface接口 做为前置
+                Stream的生成方式
+                    - 常用生成方式
+                        -> Collection体系的实例对象能够使用默认方法生成 比如ArrayList HashSet TreeSet等 list.stream.
+                        -> Map集合要间接生成. 因为Map集合的KeySet集合 value也是一个集合 因此能够调用stream生成流. entrySet也是集合.
+                        -> 数组需要使用静态方式生成. Stream中的静态方法of(T... values)方法 能够生成Stream对象.
+                Stream中的常用方法 -> Stream共有三个阶段: 生成流 - 中间操作 - 终结操作(生成流已经在上面写过了)
+                    - 常用中间操作
+                        -> filter(Predicate<T> pre)方法 注意该方法需要一个Predicate接口作为参数 用来过滤某些符合/不符合条件的元素(如已"张"开头的演员).
+                        -> limit(Long maxsize)方法 截取这个流中指定的前maxsize个元素 且包含第maxsize个元素.
+                        -> skip(Long n)方法 跳过stream流中制定n个元素.
+                        -> static<T> Stream<T> concat(Stream a, Stream b): 合并a和b两个流为一个流 返回一个Stream流元素.
+                        -> Stream<T> distinct()方法 返回由该流的不同元素(根据object.equals(Object o)组成的流 即输出不同的元素.
+                        -> Stream<T> sorted()方法 自然排序流中的元素 并返回为一个新流.
+                        -> Stream<T> sorted(Comparator comp)方法 需要传入一个比较器接口的实现类(匿名表达式或Lambda都行) 根据这个比较器进行排序 返回一个新流.
+                        -> Stream<R> map(Function func)方法 表明使用Function接口中的apply方法的具体实现对流中的每个元素进行加工 再返回一个新流 而新流的元素类型由泛型R指出.
+                        -> IntStream mapToInt(ToIntFunction func)方法 这个方法刻意返回的是一个int类型的流 其中有一个sum方法比较特殊 能够求流中所有元素的和.
+                        -> Long count()方法, 用来统计这个流中有多少个元素. 通过方法引用创建实例对象是new.
+                        -> collect(Collector<? super T,A,R> collector>)方法 能够把流中的元素收集回来 可以收集到集合 列表. 注意是一个流的实例对象调用collect(参数)方法 而collect方法的参数是Collector的实现类 可以用Collectors.toList toMap等.
+                    - 常用种接操作
+                        -> void forEach​(Consumer<? super T> action)方法 属于终结操作. forEach需要传入一个消费者类型接口(前置) 然后对流中的元素依次执行这个函数的具体动作.
+47. 395-407小课: myReflect[44].
+                反射 -> 属于高级教程.
+                三种加载器(不太明白)
+                    -> static Classloader getSystemCLassLoader() 返回用于委派的系统类加载器 AppClassLoader
+                    -> CLassLoader getParent() 返回父类加载器 AppClassLoader的父类加载器是 PlatformClassLoader
+                    -> PlatformClassLoader的父类加载器是null
+                获取class对象的三种方式
+                    -> 类名.class. 如Student.class
+                    -> 实例对象.getClass()方法获取 返回一个class对象. 如s.getClass().
+                    -> Class.forName(String className) forName()是一个静态方法. 如Class.forName("com.itheima_02.Student") 好处是能够读取配置文件 灵活性较高.
+                基本步骤: 先获取class对象 再获取构造方法 再newInstance 再根据情况获取成员方法 成员变量等使用.
+                反射获取构造方法并使用
+                    -> Constructor<?>[] getConstructors​() 返回一个包含 Constructor对象的数组，Constructor对象反映了由该 Class对象表示的类的所有公共构造函数.
+                       这个返回的是一个数组, 包括的是构造方法数组, 且只能拿到公共构造函数. 即被public修饰的构造函数. 数组里的元素类型是Constructor.
+                    -> Constructor<?>[] getDeclaredConstructors​() 返回反映由该 Class对象表示的类声明的所有构造函数的. 能够获取类的所有构造方法 包括公有私有.
+                    -> Constructor<T> getConstructor​(Class<?>... parameterTypes) 返回单个 Constructor 对象，根据参数类型确定. 获取一个指定的构造函数(只能是公有), 这个方法需要传递参数.
+                    -> Constructor<T> getDeclaredConstructor​(Class<?>... parameterTypes) 返回一个 Constructor 对象，同上.
+                       getConstructor和getDeclaredConstructor两个方法需要传递参数 注意参数类型是Class类型 -> String.class int.class Integer.class float.class等.
+                    -> T newInstance​(Object... initArgs)使用由此 Constructor 对象表示的构造函数，使用指定的初始化参数来创建和初始化一个实例对象
+                    -> void setAccessible​(boolean flag)这个方法是将实例对象的accessible属性设置为true绕过检查 也称为暴力反射. 如con.setAccessible(true).
+                    -> Field[] getFields​() 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段.
+                反射获取成员变量并使用
+                    -> Field[] getFields​() 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段. 即public关键字修饰的成员变量.
+                    -> Field[] getDeclaredFields​() 返回单个 Field对象的数组，反映了由该 Class对象表示的类或接口声明的所有字段. 获取所有成员变量.
+                    -> Field getField​(String name) 返回单个 Field对象，该对象反映由该 Class对象表示的类或接口的指定公共成员字段.
+                    -> Field getDeclaredField​(String name) 返回一个 Field对象，该对象反映由该 Class对象表示的类或接口的指定声明字段.
+                       getField和getDeclaredField两个方法的参数 要求填写被反射类的成员变量的全名. 如name age等成员变量.
+                       这几个获取成员变量的方法返回值都是Field类型 而Field中有一个set方法能够设置值 具体是这样的 -> addressField.set(obj, "西安"); addressField是Field类型的变量 设置obj这个类的address成员变量值为"西安". 具体见例子.
+                反射获取成员方法并使用
+                    -> Method[] getMethods​() 返回一个包含 方法对象的数组，包括由类或接口声明的对象以及从超类和超级接口继承的类.
+                    -> Method[] getDeclaredMethods​() 返回一个包含 方法对象的数组，包括public，protected，default(package)访问和私有方法 但不包括继承方法.
+                    -> Method getMethod​(String name, Class<?>... parameterTypes) 返回一个 方法对象.
+                    -> Method getDeclaredMethod​(String name, Class<?>... parameterTypes) 返回一个 方法对象.
+                       getMethod和getDeclaredMethod两个方法传入的参数名依然是类的成员方法的名字.
+                    -> Object invoke​(Object obj, Object... args)方法 是调用得到的Method. Object是函数的返回值类型 obj是待调用的类(具体指的是要调用哪个类的哪个方法) args是待传入的参数 无参则不传. Method的实例对象m -> m.invoke(obj).
+                练习: 向ArrayList<integer>集合中添加String对象 -> 反射实现. 因为通过反射拿到的ArrayList的add方法是add(Object obj) 这样就能添加String元素 而不是add(Integer).
+                练习: 通过读取配置文件运行类中的方法. 具体需要运行的类名称和方法名称由ini配置文件给出. 注意这里用了Properties这个集合 还用了集合的getProperty()方法.
+
+
+48. 408-410小课: myOne[45].
+    408-410小课: myTwo[46].
+                这两个模块作为模块互相依赖适用.
+                每个模块的src下面可以新建一个module-info.java文件 用于表示该包与其他包之间的 引用 或 依赖 关系.
+                    -> exports 包名; -> exports com.itheima_01; -> 声明本模块下该包可被其他模块使用.
+                    -> requires 对方模块名; -> 若在另一个模块中需要使用其他模块的类 需要在module-info.java中加上此行. 注意: 导出是导出的包 不可能把整个模块都导出 那样不安全. 而导入则是直接导入对方模块所有暴露的包.
+                    -> provides 接口名 with 接口实现类 -> provides MyService with ItheimaImpl; -> 表示该模块提供了由接口实现类提供的某种接口服务 接口实现类是我们可以更改的 因此灵活性很高.
+                    -> uses 接口名; -> uses MyService; -> 在需要使用该服务的模块的module-info.java中加上此行.
+                服务使用者只需要面向接口编程即可. 而提供者只需要提供具体的实现类即可.
+
+
+
