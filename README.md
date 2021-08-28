@@ -1,5 +1,5 @@
 # JavaSE_Code
-The records of learnning JavaSE in itheima. 
+> The records of learnning JavaSE in itheima. 
 
 
-Learnning Java language. 
+> Learnning Java language. 
