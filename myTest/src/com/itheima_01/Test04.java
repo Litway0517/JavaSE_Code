@@ -1,5 +1,13 @@
 package itheima_01;
 
+/**
+ * test04
+ *
+ * @author DELL_
+ * @date 2021-08-29
+ */
+
+
 public class Test04 {
     public static void main(String[] args) {
         // 静态定义两个整数型数组

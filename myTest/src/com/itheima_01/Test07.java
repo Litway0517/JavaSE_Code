@@ -75,6 +75,7 @@ public class Test07 {
          */
         return max;
     }
+    // TODO: 学习fetch是干嘛的
 
     // 获取数组最小值
     public static int getMin(int[] arr) {

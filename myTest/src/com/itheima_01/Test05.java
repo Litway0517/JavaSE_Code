@@ -2,6 +2,14 @@ package itheima_01;
 
 import java.util.Scanner;
 
+/**
+ * test05
+ *
+ * @author DELL_
+ * @date 2021-08-29
+ */
+
+
 public class Test05 {
     public static void main(String[] args) {
 
@@ -27,6 +35,7 @@ public class Test05 {
         for (int i = 0; i < arr.length; i++) {
             if(num == arr[i]) {
                 index = i;
+                // if一般是配合break使用的, 当循环到符合条件的时i, 注意跳出循环.
                 break;
             }
         }
