@@ -2,6 +2,14 @@ package itheima_01;
 
 import java.util.Scanner;
 
+/**
+ * test07
+ *
+ * @author DELL_
+ * @date 2021-08-29
+ */
+
+
 public class Test07 {
     public static void main(String[] args) {
 
@@ -56,6 +64,15 @@ public class Test07 {
                 max = arr[i];
             }
         }
+
+        /*
+            还一个写法
+            for (int j : arr) {
+                if (j > max) {
+                    max = j ;
+                }
+            }
+         */
         return max;
     }
 
