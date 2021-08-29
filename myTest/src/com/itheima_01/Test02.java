@@ -11,6 +11,14 @@ package itheima_01;
 // 观察对应月份: 月份:1  2  3  4  5  6  7...
 // 观察兔子数量: 数量:1  1  2  3  5  8
 
+/**
+ * test02
+ *
+ * @author DELL_
+ * @date 2021-08-29
+ */
+
+
 public class Test02 {
     public static void main(String[] args) {
         // 动态初始化数组

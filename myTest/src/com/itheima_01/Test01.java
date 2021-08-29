@@ -1,5 +1,13 @@
 package itheima_01;
 
+/**
+ * test01
+ *
+ * @author DELL_
+ * @date 2021-08-29
+ */
+
+
 public class Test01 {
     public static void main(String[] args) {
         // 需求: 输入星期数, 输出相应需要做的事情, 跑步, 游泳, 动感单车, 爬山, 慢走, 好好吃一顿.
