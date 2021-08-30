@@ -33,7 +33,7 @@ public class StringTest03 {
                 numberCount++;
             }
         }
-        System.out.println("大写字母: " + bigCount+ "小写字母: " + smallCount + "数字: " + numberCount);
+        System.out.println("大写字母: " + bigCount + "小写字母: " + smallCount + "数字: " + numberCount);
 
 
     }
