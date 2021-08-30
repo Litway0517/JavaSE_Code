@@ -18,5 +18,11 @@ public class StudentDemo {
         // public Student(String name)
         Student s1 = new Student("林青霞");
         s1.show();
+
+        Student s2 = new Student("左冷禅", 31);
+        s2.show();
+
+        Student s3 = new Student(29);
+        s3.show();
     }
 }
