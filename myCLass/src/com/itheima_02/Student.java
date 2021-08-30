@@ -1,5 +1,13 @@
 package com.itheima_02;
 
+/**
+ * 学生
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class Student {
 
     // 定义类

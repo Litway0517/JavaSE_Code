@@ -1,13 +1,21 @@
 package com.itheima_04;
 
 
+/**
+ * 学生
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class Student {
     // 成员变量
     private String name;
     private int age;
 
     // get\set方法
-    public void setName(String nanme) {
+    public void setName(String name) {
         this.name = name;               // this.name中的this意思就是本身的意思, 就是指的成员变量, 而不是setName方法中的局部变量了
     }
 

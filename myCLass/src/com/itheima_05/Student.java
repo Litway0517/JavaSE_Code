@@ -1,6 +1,14 @@
 package com.itheima_05;
 
 
+/**
+ * 学生
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class Student {
     // 成员变量
     private String name;
