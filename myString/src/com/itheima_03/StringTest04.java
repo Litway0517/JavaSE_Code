@@ -1,5 +1,13 @@
 package com.itheima_03;
 
+/**
+ * 字符串test04
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class StringTest04 {
     public static void main(String[] args) {
 
@@ -18,11 +26,10 @@ public class StringTest04 {
         s += "[";
 
         for (int i = 0; i < arr.length; i++) {
-            if (i == arr.length-1) {
+            if (i == arr.length - 1) {
                 s += arr[i];
             } else {
-                s += arr[i];
-                s += ", ";
+                s += arr[i] + ", ";
             }
         }
         s += "]";

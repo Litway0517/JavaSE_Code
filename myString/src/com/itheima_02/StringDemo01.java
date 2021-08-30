@@ -1,10 +1,18 @@
 package com.itheima_02;
 
+/**
+ * 字符串demo01
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class StringDemo01 {
     public static void main(String[] args) {
 
         // public String(); 创建一个空白字符串, 不包含任何内容
-        String s1 = new String();
+        String s1 = "";
         System.out.println("s1:" + s1);
 
         // public String(char[] chs); 根据字符数组的内容, 创建字符串

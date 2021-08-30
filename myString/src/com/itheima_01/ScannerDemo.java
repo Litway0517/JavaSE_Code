@@ -4,8 +4,16 @@ import java.util.Scanner;
 
 
 /*
-    public String nextLine​()
+    public String nextLine ()
 */
+
+/**
+ * 扫描仪演示
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
 
 public class ScannerDemo {
     public static void main(String[] args) {
@@ -17,7 +25,6 @@ public class ScannerDemo {
         // 接收数据
         String line = sc.nextLine();        // 对象调方法, 如果有返回值, 那么我们就接收, 使用Ctrl+Alt+v快捷键实现
         System.out.println("输入的数据是: " + line);
-
 
     }
 }

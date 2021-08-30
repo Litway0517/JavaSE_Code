@@ -1,7 +1,14 @@
 package com.itheima_03;
 
-import java.text.BreakIterator;
 import java.util.Scanner;
+
+/**
+ * 字符串test01
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
 
 public class StringTest01 {
     public static void main(String[] args) {
@@ -22,6 +29,7 @@ public class StringTest01 {
 
             if (name.equals(username) && pwd.equals(password)) {
                 System.out.println("登陆成功");
+                // 通常来说if 和 break需要搭配使用, 一旦满足条件了, 就退出循环
                 break;
             } else {
                 if (2 - i == 0) {

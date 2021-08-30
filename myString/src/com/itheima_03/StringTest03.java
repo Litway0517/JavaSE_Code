@@ -2,6 +2,14 @@ package com.itheima_03;
 
 import java.util.Scanner;
 
+/**
+ * 字符串test03
+ *
+ * @author DELL_
+ * @date 2021-08-30
+ */
+
+
 public class StringTest03 {
     public static void main(String[] args) {
 
