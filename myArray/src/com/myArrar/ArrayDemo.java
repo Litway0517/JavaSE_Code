@@ -16,6 +16,7 @@ public class ArrayDemo {
 
         System.out.println(arr);
         System.out.println(arr[0]);
+        System.out.println("--------");
 
         // 注意:
         // 索引越界 和 空指针异常  两种情况
