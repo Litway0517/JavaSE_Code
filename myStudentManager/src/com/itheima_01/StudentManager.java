@@ -92,7 +92,7 @@ public class StudentManager {
     }
     */
     // 定义  添加学生信息+  方法(包括学号重复情况)
-    public static void addStudent(ArrayList<Student> array) {
+    private static void addStudent(ArrayList<Student> array) {
 
         // 接收对象
         Scanner sc = new Scanner(System.in);
@@ -136,7 +136,7 @@ public class StudentManager {
 
 
     // 定义  查看所有学生信息  方法
-    public static void findAllStudent(ArrayList<Student> array) {
+    private static void findAllStudent(ArrayList<Student> array) {
 
         boolean empty = array.isEmpty();        // 当ArrayList为空时, isEmpty为true, 所以, 非空时要做的就是, 输出ArrayList的内容
 
@@ -181,7 +181,7 @@ public class StudentManager {
     }
      */
     // 定义  删除学生信息+  方法(包括学号不存在的情况)
-    public static void deleteStudent(ArrayList<Student> array) {
+    private static void deleteStudent(ArrayList<Student> array) {
 
         // 提示信息
         System.out.println("输入要删除的学生学号信息: ");
@@ -247,7 +247,7 @@ public class StudentManager {
     }
     */
     // 定义  修改学生信息+  方法(包括学号不存在情况)
-    public static void updateStudent(ArrayList<Student> array) {
+    private static void updateStudent(ArrayList<Student> array) {
 
         // 输入需要修改学生信息的学号
         Scanner sc = new Scanner(System.in);
@@ -293,7 +293,7 @@ public class StudentManager {
 
 
     // 定义  判断学号是否被使用  方法(学号是不能重复的, 所以输入学号时需要先判断)
-    public static boolean isUsed(ArrayList<Student> array, String sid) {
+    private static boolean isUsed(ArrayList<Student> array, String sid) {
         boolean flag = false;
 
         for (int i = 0; i < array.size(); i++) {
