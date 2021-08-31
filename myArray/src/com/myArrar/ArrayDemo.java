@@ -1,5 +1,13 @@
 package com.myArrar;
 
+/**
+ * 数组的演示
+ *
+ * @author DELL_
+ * @date 2021-08-31
+ */
+
+
 public class ArrayDemo {
     public static void main(String[] args) {
 
