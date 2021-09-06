@@ -81,12 +81,12 @@ Tips"
                 wait()进入等待状态 需要和synchronized配合使用. notify()唤醒线程. notifyAll()唤醒所有线程.
 41. 339-354小课: myNet[38].
                 IP相关的协议 -> 主要封装在InetAddress类下 但InetAddress并没有构造方法 需要使用类的静态方法构造InetAddress对象.
-                    -> static InetAddress getByName​(String host) Host参数可以是IP地址也可以是主机名 传入本机IP地址的字符串形式(或传入本机的主机名)返回的是InetAddress 这样就创建了一个对象.
+                    -> static InetAddress getByName (String host) Host参数可以是IP地址也可以是主机名 传入本机IP地址的字符串形式(或传入本机的主机名)返回的是InetAddress 这样就创建了一个对象.
                     -> InetAddress的实例对象s调用getHostName()获取主机名称. 调用getHostAddress()获取注即地址.
                 UDP数据报
                     发送端 -> 发送步骤: 创建套接字对象->创建数据并打包成DatagramPocket->发送数据->关闭发送端.
                         -> DatagramSocket()无参构造套接字.
-                        -> DatagramPacket​(byte[] buf, int length, InetAddress address, int port)buf是待发送的数据 length是发送的长度 address是目标主机地址 port是目标主机地址上的目标应用程序.
+                        -> DatagramPacket (byte[] buf, int length, InetAddress address, int port)buf是待发送的数据 length是发送的长度 address是目标主机地址 port是目标主机地址上的目标应用程序.
                         -> send(DatagramPocket p)肯定是由套接字对象发送数据包对象 套接字像是一个发射器而数据包是被发射的. close().
                     接收端 -> 接收步骤: 创建套接字对象->创建数据包DatagramPocket准备接受数据->接收数据->解析数据包->执行相关操作->关闭接收端.
                         -> DatagramSocket(int port)接收端的套接字需要指明端口号.
@@ -159,7 +159,7 @@ Tips"
                         -> Long count()方法, 用来统计这个流中有多少个元素. 通过方法引用创建实例对象是new.
                         -> collect(Collector<? super T,A,R> collector>)方法 能够把流中的元素收集回来 可以收集到集合 列表. 注意是一个流的实例对象调用collect(参数)方法 而collect方法的参数是Collector的实现类 可以用Collectors.toList toMap等.
                     - 常用种接操作
-                        -> void forEach​(Consumer<? super T> action)方法 属于终结操作. forEach需要传入一个消费者类型接口(前置) 然后对流中的元素依次执行这个函数的具体动作.
+                        -> void forEach (Consumer<? super T> action)方法 属于终结操作. forEach需要传入一个消费者类型接口(前置) 然后对流中的元素依次执行这个函数的具体动作.
 47. 395-407小课: myReflect[44].
                 反射 -> 属于高级教程.
                 三种加载器(不太明白)
@@ -172,29 +172,29 @@ Tips"
                     -> Class.forName(String className) forName()是一个静态方法. 如Class.forName("com.itheima_02.Student") 好处是能够读取配置文件 灵活性较高.
                 基本步骤: 先获取class对象 再获取构造方法 再newInstance 再根据情况获取成员方法 成员变量等使用.
                 反射获取构造方法并使用
-                    -> Constructor<?>[] getConstructors​() 返回一个包含 Constructor对象的数组，Constructor对象反映了由该 Class对象表示的类的所有公共构造函数.
+                    -> Constructor<?>[] getConstructors () 返回一个包含 Constructor对象的数组，Constructor对象反映了由该 Class对象表示的类的所有公共构造函数.
                        这个返回的是一个数组, 包括的是构造方法数组, 且只能拿到公共构造函数. 即被public修饰的构造函数. 数组里的元素类型是Constructor.
-                    -> Constructor<?>[] getDeclaredConstructors​() 返回反映由该 Class对象表示的类声明的所有构造函数的. 能够获取类的所有构造方法 包括公有私有.
-                    -> Constructor<T> getConstructor​(Class<?>... parameterTypes) 返回单个 Constructor 对象，根据参数类型确定. 获取一个指定的构造函数(只能是公有), 这个方法需要传递参数.
-                    -> Constructor<T> getDeclaredConstructor​(Class<?>... parameterTypes) 返回一个 Constructor 对象，同上.
+                    -> Constructor<?>[] getDeclaredConstructors () 返回反映由该 Class对象表示的类声明的所有构造函数的. 能够获取类的所有构造方法 包括公有私有.
+                    -> Constructor<T> getConstructor (Class<?>... parameterTypes) 返回单个 Constructor 对象，根据参数类型确定. 获取一个指定的构造函数(只能是公有), 这个方法需要传递参数.
+                    -> Constructor<T> getDeclaredConstructor (Class<?>... parameterTypes) 返回一个 Constructor 对象，同上.
                        getConstructor和getDeclaredConstructor两个方法需要传递参数 注意参数类型是Class类型 -> String.class int.class Integer.class float.class等.
-                    -> T newInstance​(Object... initArgs)使用由此 Constructor 对象表示的构造函数，使用指定的初始化参数来创建和初始化一个实例对象
-                    -> void setAccessible​(boolean flag)这个方法是将实例对象的accessible属性设置为true绕过检查 也称为暴力反射. 如con.setAccessible(true).
-                    -> Field[] getFields​() 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段.
+                    -> T newInstance (Object... initArgs)使用由此 Constructor 对象表示的构造函数，使用指定的初始化参数来创建和初始化一个实例对象
+                    -> void setAccessible (boolean flag)这个方法是将实例对象的accessible属性设置为true绕过检查 也称为暴力反射. 如con.setAccessible(true).
+                    -> Field[] getFields () 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段.
                 反射获取成员变量并使用
-                    -> Field[] getFields​() 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段. 即public关键字修饰的成员变量.
-                    -> Field[] getDeclaredFields​() 返回单个 Field对象的数组，反映了由该 Class对象表示的类或接口声明的所有字段. 获取所有成员变量.
-                    -> Field getField​(String name) 返回单个 Field对象，该对象反映由该 Class对象表示的类或接口的指定公共成员字段.
-                    -> Field getDeclaredField​(String name) 返回一个 Field对象，该对象反映由该 Class对象表示的类或接口的指定声明字段.
+                    -> Field[] getFields () 返回一个包含 Field对象的数组， Field对象反映由该 Class对象表示的类或接口的所有可访问的公共字段. 即public关键字修饰的成员变量.
+                    -> Field[] getDeclaredFields () 返回单个 Field对象的数组，反映了由该 Class对象表示的类或接口声明的所有字段. 获取所有成员变量.
+                    -> Field getField (String name) 返回单个 Field对象，该对象反映由该 Class对象表示的类或接口的指定公共成员字段.
+                    -> Field getDeclaredField (String name) 返回一个 Field对象，该对象反映由该 Class对象表示的类或接口的指定声明字段.
                        getField和getDeclaredField两个方法的参数 要求填写被反射类的成员变量的全名. 如name age等成员变量.
                        这几个获取成员变量的方法返回值都是Field类型 而Field中有一个set方法能够设置值 具体是这样的 -> addressField.set(obj, "西安"); addressField是Field类型的变量 设置obj这个类的address成员变量值为"西安". 具体见例子.
                 反射获取成员方法并使用
-                    -> Method[] getMethods​() 返回一个包含 方法对象的数组，包括由类或接口声明的对象以及从超类和超级接口继承的类.
-                    -> Method[] getDeclaredMethods​() 返回一个包含 方法对象的数组，包括public，protected，default(package)访问和私有方法 但不包括继承方法.
-                    -> Method getMethod​(String name, Class<?>... parameterTypes) 返回一个 方法对象.
-                    -> Method getDeclaredMethod​(String name, Class<?>... parameterTypes) 返回一个 方法对象.
+                    -> Method[] getMethods () 返回一个包含 方法对象的数组，包括由类或接口声明的对象以及从超类和超级接口继承的类.
+                    -> Method[] getDeclaredMethods () 返回一个包含 方法对象的数组，包括public，protected，default(package)访问和私有方法 但不包括继承方法.
+                    -> Method getMethod (String name, Class<?>... parameterTypes) 返回一个 方法对象.
+                    -> Method getDeclaredMethod (String name, Class<?>... parameterTypes) 返回一个 方法对象.
                        getMethod和getDeclaredMethod两个方法传入的参数名依然是类的成员方法的名字.
-                    -> Object invoke​(Object obj, Object... args)方法 是调用得到的Method. Object是函数的返回值类型 obj是待调用的类(具体指的是要调用哪个类的哪个方法) args是待传入的参数 无参则不传. Method的实例对象m -> m.invoke(obj).
+                    -> Object invoke (Object obj, Object... args)方法 是调用得到的Method. Object是函数的返回值类型 obj是待调用的类(具体指的是要调用哪个类的哪个方法) args是待传入的参数 无参则不传. Method的实例对象m -> m.invoke(obj).
                 练习: 向ArrayList<integer>集合中添加String对象 -> 反射实现. 因为通过反射拿到的ArrayList的add方法是add(Object obj) 这样就能添加String元素 而不是add(Integer).
                 练习: 通过读取配置文件运行类中的方法. 具体需要运行的类名称和方法名称由ini配置文件给出. 注意这里用了Properties这个集合 还用了集合的getProperty()方法.
 
