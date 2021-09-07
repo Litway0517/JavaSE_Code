@@ -19,6 +19,7 @@ public class Student {
         show3();
     }
 
+
     // 静态成员方法
     public static void show3() {
     }
