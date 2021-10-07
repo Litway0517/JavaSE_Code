@@ -1,5 +1,12 @@
 package com.itheima_02;
 
+
+/**
+ * 动物
+ *
+ * @author DELL
+ * @date 2021/10/07
+ */
 public class Animal {
 
     public int age = 40;

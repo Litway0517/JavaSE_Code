@@ -1,5 +1,13 @@
 package com.itheima_02;
 
+
+
+/**
+ * 猫
+ *
+ * @author DELL
+ * @date 2021/10/07
+ */
 public class Cat extends Animal {
 
     public int age = 20;
