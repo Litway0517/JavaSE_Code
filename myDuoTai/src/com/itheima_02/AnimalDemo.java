@@ -17,8 +17,9 @@ public class AnimalDemo {
         // 有父类引用指向子类对象
         Animal a = new Cat();
 
-        System.out.println(a.age);      // 成员变量a的编译看左面, 运行看左面. 因为Animal里面的age为40, 所以输出40.
-//        System.out.println(a.weight); // 因为父类Animal里面没有weight, 所以不能访问.
+        // 成员变量a的编译看左面, 运行看左面. 因为Animal里面的age为40, 所以输出40.
+        System.out.println(a.age);
+//        System.out.println(a.weight); // 因为父类Animal里面没有weight, 所以不能访问 -> 报错
 
 
         // 同理, 方法也是看左面:
