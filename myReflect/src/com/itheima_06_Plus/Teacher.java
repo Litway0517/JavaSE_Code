@@ -9,6 +9,6 @@ package com.itheima_06_Plus;
 
 public class Teacher {
     public void teach() {
-        System.out.println("较好每一位学生");
+        System.out.println("教好每一位学生");
     }
 }
