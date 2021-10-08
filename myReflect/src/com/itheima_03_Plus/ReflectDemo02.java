@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 
 /*
     通过反射实现如下的操作：
-        Students=new Student（“林青霞”，3e，“西安"）；
+        Students=new Student（“林青霞”，30，“西安"）；
         System.out.println（s）；
  */
 
