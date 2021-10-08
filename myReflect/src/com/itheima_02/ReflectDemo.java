@@ -9,13 +9,13 @@ package com.itheima_02;
 
 /*
     三种方式获取CLass对象
-    1：使用类的cLass属性来获取该类对应的CLass对象。举例：Student.cLass将会返回student类对应的CLass对象
+    1：使用类的cLass属性来获取该类对应的CLass对象. 举例: Student.cLass将会返回student类对应的CLass对象
 
-    2：调用对象的getClass（）方法，返回该对象所属类对应的CLass对象
-        该方法是Object类中的方法，所有的Java对象都可以调用该方法
+    2：调用对象的getClass()方法, 返回该对象所属类对应的CLass对象
+        该方法是Object类中的方法. 所有的Java对象都可以调用该方法
 
-    3：使用CLass类中的静态方法forName（String cLassName），该方法需要传入字符串参数，
-        该字符串参数的值是某个类的全路径，也就是完整包名的路径
+    3：使用CLass类中的静态方法forName(String cLassName), 该方法需要传入字符串参数.
+        该字符串参数的值是某个类的全路径, 也就是完整包名的路径
 
  */
 

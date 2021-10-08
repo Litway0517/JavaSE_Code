@@ -28,9 +28,9 @@ public class Student {
     public String address;
 
     // 构造方法 -> 一个私有 一个默认 一个公共
-
     public Student() {
     }
+
 
     private Student(String name) {
         this.name = name;
@@ -49,7 +49,6 @@ public class Student {
 
 
     // 成员方法 -> 一个私有, 四个公共
-
     private void function() {
         System.out.println("function函数被执行");
     }
