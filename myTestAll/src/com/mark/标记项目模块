@@ -162,7 +162,8 @@ Tips"
                         -> void forEach (Consumer<? super T> action)方法 属于终结操作. forEach需要传入一个消费者类型接口(前置) 然后对流中的元素依次执行这个函数的具体动作.
 47. 395-407小课: myReflect[44].
                 反射 -> 属于高级教程.
-                三种加载器(不太明白)
+                反射的定义 -> 将类的各个组成部分封装成其他对象(Field, Method, Constructor等), 这就是反射.
+                三种加载器(不太明白) -> 其实就是将*.class文件加载到内存中的一个工具.
                     -> static Classloader getSystemCLassLoader() 返回用于委派的系统类加载器 AppClassLoader
                     -> CLassLoader getParent() 返回父类加载器 AppClassLoader的父类加载器是 PlatformClassLoader
                     -> PlatformClassLoader的父类加载器是null
