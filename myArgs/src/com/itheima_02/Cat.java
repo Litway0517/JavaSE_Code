@@ -1,6 +1,6 @@
 package com.itheima_02;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     @Override
     public void eat() {
