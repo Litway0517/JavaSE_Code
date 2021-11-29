@@ -23,6 +23,10 @@ public class Outer {
 
         public void show() {
             System.out.println(university);
+
+            // 实例化外部类, 并且调用方法(循环)
+            Outer outer = new Outer();
+            outer.method();
         }
     }
 
