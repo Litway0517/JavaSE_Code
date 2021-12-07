@@ -44,12 +44,11 @@ public class ArrayDemo {
             if (i == array.length-1) {
                 sb.append(array[i]);
             } else {
-                sb.append(array[i] + ", ");
+                sb.append(array[i]).append(", ");
             }
         }
         sb.append("]");
 
-        String s = sb.toString();
-        return s;
+        return sb.toString();
     }
 }
