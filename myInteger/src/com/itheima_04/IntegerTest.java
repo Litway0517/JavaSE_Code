@@ -43,7 +43,7 @@ public class IntegerTest {
             if (i == arr.length - 1) {      // 若是最后一个元素, 仅仅添加元素值
                 sb.append(arr[i]);
             } else {
-                sb.append(arr[i] + " ");    // 否则, 既添加元素值也添加一个空格
+                sb.append(arr[i]).append(" ");    // 否则, 既添加元素值也添加一个空格
             }
         }
 
