@@ -1,6 +1,5 @@
 package com.itheima_02;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -30,7 +29,7 @@ public class DateUtils {
     }
 
     // String --- Date
-    public static Date stringToDate(String s, String format) throws ParseException {
+    public static Date stringToDate(String s, String format) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.parse(s);
     }
