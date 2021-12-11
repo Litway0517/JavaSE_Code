@@ -20,15 +20,13 @@ public class DateUtils {
     // 定义方法 Date --- String
     public static String dateToString(Date date, String format) {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
-        String s = sdf.format(date);
-        return s;
+        return sdf.format(date);
     }
 
     // String --- Date
     public static Date stringToDate(String s, String format) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
-        Date date = sdf.parse(s);
-        return date;
+        return sdf.parse(s);
     }
 
 
