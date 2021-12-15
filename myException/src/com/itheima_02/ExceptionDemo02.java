@@ -3,7 +3,7 @@ package com.itheima_02;
 /*
     public String getMessage（）：返回此throwable的详细消息字符串
     public String tostring（）：返回此可抛出的简短描述
-    public void printStackTrace（）：把异常的错误信息输出在控制台
+    public void printStackTrace（）：把异常的错误信息输出在控制台 -> 调用栈
  */
 
 /**
