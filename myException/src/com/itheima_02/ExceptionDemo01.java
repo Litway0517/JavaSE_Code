@@ -1,5 +1,11 @@
 package com.itheima_02;
 
+/**
+ * 异常demo01
+ *
+ * @author DELL_
+ * @date 2021/12/15
+ */
 public class ExceptionDemo01 {
     public static void main(String[] args) {
 
