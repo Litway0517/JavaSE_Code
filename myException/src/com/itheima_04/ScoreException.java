@@ -1,5 +1,12 @@
 package com.itheima_04;
 
+/**
+ * 分数异常
+ *
+ * @author DELL_
+ * @date 2021/12/19
+ */
+
 /*
     自定义一个新的异常类: ScoreException, 继承自Exception(编译时异常)
  */
