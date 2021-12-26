@@ -24,6 +24,7 @@ public class CollectionDemo02 {
         System.out.println(c.add("World"));
         System.out.println(c.add("World"));     // ArrayList集合, 能够重复元素
         // add方法总返回true
+
         c.add("Hello");
         c.add("World");
         c.add("World");
@@ -31,7 +32,10 @@ public class CollectionDemo02 {
         System.out.println("--------");
 
         // boolean remove（Object o）：从集合中移除指定的元素
+        // 待考察 -> 通过remove("元素名称"), 移除元素时, 仅仅会移除第一个符合条件的元素, 然后就返回true, 否则就是集合种不存在该元素, 返回false
         System.out.println(c.remove("World"));
+        // 移除不存在的元素会返回false, 可以用于一些条件判断
+        System.out.println(c);
         System.out.println(c.remove("JavaSE"));
         System.out.println(c);
         System.out.println("--------");
