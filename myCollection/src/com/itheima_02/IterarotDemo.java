@@ -15,6 +15,12 @@ import java.util.Iterator;
         boolean hasNext（）：如果迭代具有更多元素，则返回 true
  */
 
+/**
+ * iterarot演示
+ *
+ * @author DELL_
+ * @date 2021/12/29
+ */
 public class IterarotDemo {
     public static void main(String[] args) {
 

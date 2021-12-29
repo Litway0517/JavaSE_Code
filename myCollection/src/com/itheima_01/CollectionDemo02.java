@@ -13,6 +13,12 @@ import java.util.Collection;
         int size（）：集合的长度，也就是集合中元素的个数
  */
 
+/**
+ * 收集demo02
+ *
+ * @author DELL_
+ * @date 2021/12/29
+ */
 public class CollectionDemo02 {
     public static void main(String[] args) {
 
