@@ -8,6 +8,12 @@ import java.util.Iterator;
     测试类
  */
 
+/**
+ * 迭代器测试
+ *
+ * @author DELL_
+ * @date 2021/12/29
+ */
 public class IteratorTest {
     public static void main(String[] args) {
 
