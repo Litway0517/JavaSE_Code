@@ -1,9 +1,20 @@
 package com.itheima_02;
 
+/**
+ * 学生
+ *
+ * @author DELL_
+ * @date 2021/12/30
+ */
 public class Student {
 
-    // 定义成员变量
+    /**
+     * 名字
+     */// 定义成员变量
     private String name;
+    /**
+     * 年龄
+     */
     private int age;
 
     public Student() {
