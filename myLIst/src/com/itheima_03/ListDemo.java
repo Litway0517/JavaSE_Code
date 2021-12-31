@@ -35,13 +35,13 @@ public class ListDemo {
             }
         }
         */
-        
+
 
         // 通过第二种方法for循环完成需求: 不报错
         for (int i = 0; i < list.size(); i++) {
             String s = list.get(i);         // add放get方法并没有检查两个元素.
             if (s.equals("world")) {
-                list.add("java");
+                list.add("javaee");
             }
         }
 
