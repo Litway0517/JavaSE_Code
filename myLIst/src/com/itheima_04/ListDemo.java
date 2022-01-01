@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
+/**
+ * 列表演示
+ *
+ * @author DELL_
+ * @date 2022/01/01
+ */
 public class ListDemo {
     public static void main(String[] args) {
 
