@@ -13,6 +13,12 @@ package com.itheima_05;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 为演示
+ *
+ * @author DELL_
+ * @date 2022/01/02
+ */
 public class ForDemo {
     public static void main(String[] args) {
 
