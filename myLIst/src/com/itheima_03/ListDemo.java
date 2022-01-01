@@ -26,7 +26,6 @@ public class ListDemo {
         Iterator<String> it = list.iterator();
 
         // 报错原因是因为: modCount这个变量和exceptedModCount这两个变量值不一样, 因为list调用add方法时, modCount值加一了.
-        /*
         while (it.hasNext()) {
             String s = it.next();
             if (s.equals("world")) {        // ConcurrentModificationException: 并发修改异常(运行时异常)
@@ -34,7 +33,6 @@ public class ListDemo {
                 System.out.println(list);   // 在这里能输出的原因是因为, modCount这个变量还没有++
             }
         }
-        */
 
 
         // 通过第二种方法for循环完成需求: 不报错
