@@ -1,9 +1,20 @@
 package com.itheima_04;
 
+/**
+ * 动物
+ *
+ * @author DELL_
+ * @date 2022/01/25
+ */
 public abstract class Animal {
 
-    // 定义 成员变量
+    /**
+     * 名字
+     */// 定义 成员变量
     private String name;
+    /**
+     * 年龄
+     */
     private int age;
 
     // 生成 无参构造方法
