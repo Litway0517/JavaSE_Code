@@ -8,17 +8,17 @@ public class AnimalDemo {
     public static void main(String[] args) {
 
         // 创建方法, 多态
-        Animal a = new Cat();
-        a.setName("加菲");
-        a.setAge(5);
-        System.out.println(a.getName() + ", " + a.getAge());
-        a.eat();
+        Animal catKaFe = new Cat();
+        catKaFe.setName("加菲");
+        catKaFe.setAge(5);
+        System.out.println(catKaFe.getName() + ", " + catKaFe.getAge());
+        catKaFe.eat();
 
         System.out.println("---------");
 
-        Animal a1 = new Cat("加菲", 3);
-        System.out.println(a1.getName() + ", " + a1.getAge());
-        a1.eat();
+        Animal catKaFe2 = new Cat("加菲", 3);
+        System.out.println(catKaFe2.getName() + ", " + catKaFe2.getAge());
+        catKaFe2.eat();
 
 
         // 狗类是一样的
