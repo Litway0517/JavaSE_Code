@@ -1,5 +1,11 @@
 package com.itheima_01;
 
+/**
+ * 动物演示
+ *
+ * @author DELL_
+ * @date 2022/01/25
+ */
 public class AnimalDemo {
     public static void main(String[] args) {
 
