@@ -20,7 +20,7 @@ public class ListDemo02 {
         list.add("world");
         list.add("javase");
 
-        // 指定位置插入
+        // 指定位置插入 -> 传入两个参数
         list.add(1, "sm");
         System.out.println(list);
 
