@@ -24,10 +24,10 @@ public class ListDemo02 {
         list.add(1, "sm");
         System.out.println(list);
 
-        //指定为删除
+        // 指定位置删除 -> 将返回被删除的元素的内容本身
         System.out.println(list.remove(1));     // 打印被删除的元素
 
-        // 修改指定位置处的元素
+        // 修改指定位置处的元素 -> 更新
         System.out.println(list.set(1, "sm"));
 
         // 获取指定位置元素
