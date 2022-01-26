@@ -5,6 +5,13 @@ import java.util.Iterator;
 import java.util.List;
 
 
+/**
+ * 列表演示
+ *
+ * @author DELL_
+ * @date 2022/01/26
+ */
+
 /*
     需求：
         我有一个集合：List<string>list=new ArrayList<string>（）；
