@@ -11,11 +11,6 @@ import java.util.ListIterator;
  * @date 2022/01/01
  */
 public class ListDemo {
-    /**
-     * 主要
-     *
-     * @param args arg游戏
-     */
     public static void main(String[] args) {
 
         // 创建对象
