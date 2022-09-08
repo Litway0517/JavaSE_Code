@@ -8,6 +8,10 @@ package com.itheima_03;
  */
 public class Cat extends Animal{
 
+    public Cat() {
+        super(10, "test");
+    }
+
     /**
      * 吃
      */
